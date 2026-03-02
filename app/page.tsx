@@ -136,7 +136,7 @@ function MetricRow({
 
  
     return (
-    <div className="rounded-2xl border border-[color:var(--pe-ink-light)] bg-[var(--pe-card-dark)] p-5 text-[color:var(--pe-ink-light)]">
+    <div className="rounded-2xl border border-black/10 bg-[var(--pe-black)] p-5 text-black/70">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="text-sm font-extrabold text-black/70">{title}</div>
