@@ -12,6 +12,13 @@
   --pe-orange: var(--brand-accent, #CAB448);
   --pe-muted: var(--brand-muted, #F1EFE7);
 
+  /* Light ink color (for dark tiles/borders) */
+  --pe-ink-light: #F1EFE7;
+
+  /* Optional: dark tile surface (if you want a consistent dark card color) */
+  --pe-card-dark: #212721;
+}
+
   /* Card surface */
   --pe-card: var(--brand-card, rgba(255, 255, 255, 0.65));
 }
