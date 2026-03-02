@@ -9,14 +9,14 @@
   --tab-active-bg: #212721;
   --tab-active-text: #ffffff;
   --pe-beige: var(--brand-bg, #F1EFE7);
-  --pe-black: var(--brand-text, #212721);
+  --pe-black: var(--brand-text, #CAB448);
   --pe-orange: var(--brand-accent, #CAB448);
   --pe-muted: var(--brand-muted, #F1EFE7);
   --pe-ink-light: #F1EFE7;
   --pe-card-dark: #212721;
 
   /* Card surface */
-  --pe-card: var(--brand-card, #F1EFE7));
+  --pe-card: var(--brand-card, #212721));
 }
 
 html, body {
