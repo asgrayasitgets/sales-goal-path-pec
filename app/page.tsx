@@ -450,16 +450,23 @@ async function load() {
                 onClick={() => setTab(t)}
                 className={[
                   "flex-1 rounded-full px-3 py-2 text-sm font-bold",
-                  tab === t
-  ? "bg-[var(--tab-active-bg)] text-[var(--tab-active-text)]"
-  : "bg-white/90 text-[var(--header-button-text)] border border-[color:var(--pe-border)]",
-                ].join(" ")}
-              >
-                {t}
-              </button>
-            ))}
-          </div>
-        </div>
+                 <div className="mt-4 flex gap-2">
+  {(["YTD", "Monthly", "Weekly"] as const).map((t) => (
+    <button
+      key={t}
+      onClick={() => setTab(t)}
+      className={[
+        "flex-1 rounded-full px-3 py-2 text-sm font-bold",
+        tab === t
+          ? "bg-[var(--tab-active-bg)] text-[var(--tab-active-text)]"
+          : "bg-[var(--tab-inactive-bg)] text-[var(--tab-inactive-text)] border border-[color:var(--pe-border)]",
+      ].join(" ")}
+    >
+      {t}
+    </button>
+  ))}
+</div>
+       
 
         {/* YTD */}
         {tab === "YTD" && (
