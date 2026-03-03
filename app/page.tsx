@@ -444,13 +444,6 @@ async function load() {
           </div>
 
           <div className="mt-4 flex gap-2">
-            {(["YTD", "Monthly", "Weekly"] as const).map((t) => (
-              <button
-                key={t}
-                onClick={() => setTab(t)}
-                className={[
-                  "flex-1 rounded-full px-3 py-2 text-sm font-bold",
-                 <div className="mt-4 flex gap-2">
   {(["YTD", "Monthly", "Weekly"] as const).map((t) => (
     <button
       key={t}
@@ -466,7 +459,7 @@ async function load() {
     </button>
   ))}
 </div>
-    </div>   
+        </div>
 
         {/* YTD */}
         {tab === "YTD" && (
