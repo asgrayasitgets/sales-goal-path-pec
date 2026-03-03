@@ -87,9 +87,9 @@ export default function RootLayout({
       "rgba(255,255,255,0.65)",
 
     ["--tab-inactive-text" as any]:
-      process.env.NEXT_PUBLIC_TAB_INACTIVE_TEXT ||
-      process.env.NEXT_PUBLIC_BRAND_TEXT ||
-      "#212721",
+  process.env.NEXT_PUBLIC_TAB_INACTIVE_TEXT ||
+  process.env.NEXT_PUBLIC_BRAND_TEXT ||
+  "#212721",
 
     // =========================
     // Header (optional)
